@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
 
 app.post("/chat", async (req, res) => {
   const { message } = req.body;
-
   res.json({ reply: "Você disse: " + message });
 });
 
